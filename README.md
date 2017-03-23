@@ -8,8 +8,8 @@
     :target: https://github.com/openprocurement/openprocurement.relocation.tenders/blob/master/LICENSE.txt
 
 openprocurement.relocation.tenders
-==============================
+==================================
 
 Tender ownership transfer API interface to OpenProcurement database
 
-Documentation for this package is available at http://relocation.api-docs.openprocurement.org/en/latest/overview.html
+Documentation for this package is available at http://relocation.tenders-docs.openprocurement.org/en/latest/overview.html
