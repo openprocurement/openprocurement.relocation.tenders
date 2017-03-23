@@ -2,17 +2,17 @@
 import json
 import os
 
+from openprocurement.api.models import get_now
 import openprocurement.relocation.tenders.tests.base as base_test
 from copy import deepcopy
 from openprocurement.api.tests.base import (
     PrefixedRequestClass, test_tender_data, test_organization
 )
-from openprocurement.relocation.api.tests.base import OwnershipWebTest, test_transfer_data, OpenEUOwnershipWebTest, test_eu_tender_data, test_ua_bid_data
+from openprocurement.relocation.tenders.tests.base import OwnershipWebTest, test_transfer_data, OpenEUOwnershipWebTest, test_eu_tender_data, test_ua_bid_data
 from openprocurement.tender.competitivedialogue.tests.base import (BaseCompetitiveDialogWebTest,
                                                                    test_tender_stage2_data_ua,
                                                                    test_access_token_stage1)
 from openprocurement.tender.openeu.models import TENDERING_DURATION
-from openprocurement.api.models import get_now
 from webtest import TestApp
 
 
