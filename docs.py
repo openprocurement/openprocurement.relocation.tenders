@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import json
 import os
-from datetime import timedelta
 
-import openprocurement.relocation.api.tests.base as base_test
+import openprocurement.relocation.tenders.tests.base as base_test
 from copy import deepcopy
 from openprocurement.api.tests.base import (
     PrefixedRequestClass, test_tender_data, test_organization
