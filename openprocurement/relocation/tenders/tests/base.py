@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from openprocurement.relocation.core.tests.base import BaseWebTest, now
 
 from openprocurement.api.utils import apply_data_patch
-from openprocurement.api.tests.base import test_organization, test_tender_data
+from openprocurement.tender.belowthreshold.tests.base import test_organization, test_tender_data
 from openprocurement.tender.openua.tests.base import test_tender_data as test_ua_tender_data
 from openprocurement.tender.openuadefense.tests.base import test_tender_data as test_uadefense_tender_data
 from openprocurement.tender.openeu.tests.base import test_tender_data as test_eu_tender_data

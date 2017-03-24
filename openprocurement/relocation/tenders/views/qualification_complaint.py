@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+from openprocurement.tender.core.utils import save_tender
 from openprocurement.api.utils import (
     json_view,
     APIResource,
-    save_tender,
     ROUTE_PREFIX,
     context_unpack
 )
