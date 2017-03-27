@@ -55,7 +55,7 @@ class ReportingTenderOwnershipChangeTest(TenderOwnershipChangeTest):
     initial_tender_data = test_tender_reporting_data
     second_owner = 'broker1'
     test_owner = 'broker1t'
-    invalid_owner = 'broker3'
+    invalid_owner = 'broker2'
 
 
 class NegotiationTenderOwnershipChangeTest(TenderOwnershipChangeTest):
