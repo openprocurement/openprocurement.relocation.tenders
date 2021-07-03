@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+from openprocurement.tender.core.utils import save_tender
 from openprocurement.api.utils import (
     json_view,
     APIResource,
-    save_tender,
     ROUTE_PREFIX,
     context_unpack
 )
@@ -13,8 +13,8 @@ from openprocurement.relocation.tenders.validation import validate_complaint_acc
 
 
 @qualifications_resource(name='Qualification complaint ownership',
-            path='/tenders/{tender_id}/qualifications/{qualification_id}/complaints/{complaint_id}/ownership',
-            description="Qualification complaint Ownership")
+                         path='/tenders/{tender_id}/qualifications/{qualification_id}/complaints/{complaint_id}/ownership',
+                         description="Qualification complaint Ownership")
 class QualificationComplaintOwnershipResource(APIResource):
 
     @json_view(permission='create_complaint',
@@ -24,7 +24,7 @@ class QualificationComplaintOwnershipResource(APIResource):
         complaint = self.request.context
         tender = self.request.validated['tender']
         qualification_id = self.request.validated['qualification_id']
-        location = self.request.route_path('Tender EU Qualification Complaints', tender_id=tender.id, qualification_id=qualification_id, complaint_id=complaint.id)
+        location = self.request.route_path('aboveThresholdEU:Tender Qualification Complaints', tender_id=tender.id, qualification_id=qualification_id, complaint_id=complaint.id)
         location = location[len(ROUTE_PREFIX):]  # strips /api/<version>
 
         if change_ownership(self.request, location) and save_tender(self.request):

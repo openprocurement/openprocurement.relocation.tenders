@@ -161,7 +161,6 @@ class OpenEUAwardComplaintOwnershipChangeTest(OpenEUOwnershipWebTest, OpenUAAwar
         self.request_path = '/{}/{}/awards/{}/complaints/{}'.format(self.resource, self.tender_id, self.award_id, self.complaint_id)
 
 
-
 class NegotiationAwardComplaintOwnershipChangeTest(OpenUAAwardComplaintOwnershipChangeTest):
     initial_tender_data = test_tender_negotiation_data
 
@@ -190,11 +189,8 @@ class NegotiationAwardComplaintOwnershipChangeTest(OpenUAAwardComplaintOwnership
         self.request_path = '/{}/{}/awards/{}/complaints/{}'.format(self.resource, self.tender_id, self.award_id, self.complaint_id)
 
 
-
-
 class NegotiationQuickAwardComplaintOwnershipChangeTest(NegotiationAwardComplaintOwnershipChangeTest):
     initial_tender_data = test_tender_negotiation_quick_data
-
 
 
 def suite():
