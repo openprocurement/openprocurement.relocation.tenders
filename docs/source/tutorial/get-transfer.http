@@ -1,0 +1,13 @@
+GET /api/2.3/transfers/a5a9d0af94cdebf91d8ea39b8702410a HTTP/1.0
+Authorization: Basic YnJva2VyMTo=
+Host: api-sandbox.openprocurement.org
+
+Response: 200 OK
+Content-Type: application/json; charset=UTF-8
+{
+  "data": {
+    "date": "2016-07-04T19:00:54.613149+03:00", 
+    "id": "a5a9d0af94cdebf91d8ea39b8702410a"
+  }
+}
+

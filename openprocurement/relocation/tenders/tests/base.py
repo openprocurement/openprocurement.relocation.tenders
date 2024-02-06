@@ -15,6 +15,8 @@ from openprocurement.tender.limited.tests.base import (test_tender_data as test_
                                                        test_tender_negotiation_quick_data)
 
 
+test_transfer_data = {}
+
 test_bid_data = {'tenderers': [test_organization], "value": {"amount": 500}}
 test_ua_bid_data = deepcopy(test_bid_data)
 test_ua_bid_data.update({'selfEligible': True, 'selfQualified': True})
